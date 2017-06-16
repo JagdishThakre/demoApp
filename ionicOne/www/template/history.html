@@ -1,0 +1,18 @@
+<ion-view cache-view="false" view-title="BC Payment"  >   
+  <div class="bar bar-header bar-energized">
+      <a href="javascript:;" ng-click="logout()" class="button  "><img width="20px;" src="img/logout.png"></a>  
+      <h1 class="title">History</h1>  
+      <a href="javascript:;" ng-click="AddHistory()" class="button  "><img width="20px;" src="img/done.png"></a>  
+  </div>
+   <ion-content class="histroy-bg" >
+      <div class="time-entry-box">
+        <ul class="list"> 
+             <!--| orderBy:'id':true | limitTo : '10'-->
+            <li class="item" ng-repeat="list in data | limitTo : '-10'">
+             <span class="date">{{list.date}}</span>
+             <!--<span class="time">11:00PM</span>-->
+            </li>
+        </ul>
+      </div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,29 @@
+<ion-content class="login-page">
+        <div class="logo-box"> 
+          <img src="img/logo.png">
+        </div>
+        <div class="login-form-box">
+            <div class="list list-inset">
+                <form name="loginForm" id="loginForm" ng-submit="login(loginForm.$valid)" novalidate>
+            <label class="item item-input">
+                <input type="text" name="username" id="username" placeholder="User Name" ng-model="loginData.username" required>
+              <img class="icon-user" width="20px;" src="img/user.png">
+            </label>
+                      <div class="" ng-class="{'has-error': loginForm.username.$invalid && submitted}">
+                                <span ng-show="submitted && loginForm.username.$error.required" class="validation-login popup-forvalidation">Please enter user name</span>
+                                
+                        </div>
+                    
+            <label class="item item-input">
+                <input type="password" name="password" id="password" placeholder="Password" ng-model="loginData.password"  required >
+              <img class="icon-pass" width="20px;" src="img/password.png">
+            </label>
+     <div class="form-group box-shadow password-div-loged" ng-class="{'has-error': loginForm.password.$invalid && submitted}">
+                            
+                            <span ng-show="submitted && loginForm.password.$error.required" class="validation-login popup-forvalidation correct-password-login-error">Please enter password</span>
+                            </div>
+                  <input  type="submit" ng-click="submitted = true" name="submit" id="submit" value="Login"  class="button button-small loginSubmit"></form>
+          </div>
+        </div>
+
+  </ion-content>

@@ -1,0 +1,91 @@
+/* Empty. Add your own CSS if you like */
+
+ion-view{
+    font-family: 'Roboto', sans-serif;
+}
+.bar.bar-header.bar-energized {
+  background-color: #f99d32;
+}
+.bar-energized a {
+  background-color: transparent!important;
+  border-color: transparent!important;
+  color: #fff;
+  padding-top: 4px!important;
+}
+.login-page{
+   background-color: #f99d32;
+  height: 100%;
+}
+::-moz-placeholder { 
+  color: #74706B;
+}
+.logo-box {
+  background-color: #f99d32;
+  padding-top: 140px;
+  text-align: center;
+}
+.logo-box img {
+  margin: auto;
+  width: 260px;
+}
+.login-form-box {
+  margin: auto;
+  width: 80%;
+}
+ 
+.login-form-box .list label {
+  border-radius: 5px!important;
+  margin-bottom: 10px;
+  position: relative;
+}
+.login-form-box .card, .list-inset {
+  background-color: transparent;
+  border-radius: 2px;
+  margin: 20px 10px;
+  overflow: hidden;
+}
+.login-form-box .list .item input {
+  color: #74706b;
+  padding-left: 25px;
+}
+.login-form-box .list label .icon-pass {
+  left: 16px;
+  position: absolute;
+  top: 11px;
+  width: 16px;
+}
+.login-form-box .list label .icon-user {
+  left: 16px;
+  position: absolute;
+  top: 13px;
+  width: 16px;
+}
+.login-form-box .list input[type='submit']{
+  background-color: #452c0e;
+  color: #fff;
+  font-size: 15px;
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+}
+.histroy-bg {
+  background-color: #f2f2f2;
+  margin-top: 43px;
+}
+.time-entry-box {
+  font-weight: normal;
+  text-align: center;
+}
+.time-entry-box .list .item {
+  background-color: #f2f2f2;
+  border-color: #ddd;
+  border-style: solid;
+  border-width: 1px;
+  color: #444;
+  display: block;
+  font-size: 15px;
+  margin: -1px;
+  padding: 20px;
+  position: relative;
+  z-index: 2;
+}
